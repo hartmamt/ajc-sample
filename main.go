@@ -10,17 +10,6 @@ import (
 )
 
 func main() {
-
-	// nc, err := nats.Connect("localhost:4222")
-	// if err != nil {
-	// 	panic(err)
-	// }
-
-	// client, err := asyncjobs.NewClient(asyncjobs.NatsConn(nc))
-	// if err != nil {
-	// 	panic(err)
-	// }
-
 	client, _ := aj.NewClient(aj.NatsContext("AJC"))
 
 	// The deadline being an hour from now will result in a Schedule Task with a 1 hour deadline set
